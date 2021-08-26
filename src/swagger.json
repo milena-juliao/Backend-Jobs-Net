@@ -1,0 +1,91 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Api do projeto JobsNet",
+        "description": "essa é a api do projeto JobsNet",
+        "version": "0.0.1"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:5000",
+            "description": "ambiente de desenvolvimento"
+        }
+    ],
+
+    "paths": {
+        "/register": {
+            "post": {
+                "summary": "Cadastro do candidato",
+                "description": "Rota de cadastro de usuário, recebe: email, gênero, nome, nasc, cpf, cep, logradouro, número, cidade, profissão, celular, estado Civil, cargo pretendido",
+                "tags": ["candidato"],
+                "requestBody": {
+                    "content": {
+                        "aplication/json": {
+                            "schema": {
+                                "properties": {
+                                    "email": {
+                                        "type": "string"
+                                    },
+                                    "gender": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "nasc": {
+                                        "type": "string"
+                                    },
+                                    "cpf": {
+                                        "type": "string"
+                                    },
+                                    "cep": {
+                                        "type": "string"
+                                    },
+                                    "logradouro": {
+                                        "type": "string"
+                                    },
+                                    "numero": {
+                                        "type": "string"
+                                    },
+                                    "cidade": {
+                                        "type": "string"
+                                    },
+                                    "profissao": {
+                                        "type": "string"
+                                    },
+                                    "celular": {
+                                        "type": "string"
+                                    },
+                                    "estCivil": {
+                                        "type": "string"
+                                    },
+                                    "cargoPretend": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "examples": {
+                                "usuario": {
+                                    "value": {
+                                        "name": "Nome Sobrenome",
+                                        "gender": "Feminino Cis",
+                                        "email": "usuario.usuario@gmail.com",
+                                        "cep": "12345-678",
+                                        "cpf": "000.000.000-00",
+                                        "logradouro": "Rua das Rosas",
+                                        "cidade": "Americana",
+                                        "numero": "123",
+                                        "celular": "987654321",
+                                        "estCivil": "Solteira(o)",
+                                        "cargoPretend": "Cozinheira(o)",
+                                        "profissao": "Jornalista"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

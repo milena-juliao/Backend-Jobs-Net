@@ -1,0 +1,31 @@
+{
+  "name": "jobsnet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "Milena Juliao",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "modulo": "0.0.3",
+    "mongoose": "^6.0.1",
+    "package-lock.json": "^1.0.0",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "bugs": {
+    "url": "https://github.com/milena-juliao/JobsNet/issues"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milena-juliao/JobsNet.git"
+  },
+  "homepage": "https://github.com/milena-juliao/JobsNet#readme"
+}
