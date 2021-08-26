@@ -68,6 +68,7 @@
                                 "usuario": {
                                     "value": {
                                         "name": "Nome Sobrenome",
+                                        "nasc": "01/02/2003",
                                         "gender": "Feminino Cis",
                                         "email": "usuario.usuario@gmail.com",
                                         "cep": "12345-678",
