@@ -3,7 +3,7 @@ const Candidate = require('../models/Candidate');
 module.exports = {
     async register(req, res){
         const {email, gender, name, nasc, cpf, cep, logradouro, numero, cidade, profissao, celular, estCivil, cargoPretend} = req.body;
-
+        
         const newCandidate = new Candidate();
 
         newCandidate.email = email;
@@ -29,4 +29,4 @@ module.exports = {
         });
 
     },
-}
+};
